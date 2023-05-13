@@ -1,6 +1,6 @@
-package com.dev.dslist.repositories;
+package com.dev.gameslist.repositories;
 
-import com.dev.dslist.entities.GameList;
+import com.dev.gameslist.entities.GameList;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface GameListRepository extends JpaRepository<GameList, Long> {

@@ -1,8 +1,8 @@
-package com.dev.dslist.controllers;
+package com.dev.gameslist.controllers;
 
-import com.dev.dslist.dto.GameDTO;
-import com.dev.dslist.dto.GameMinDTO;
-import com.dev.dslist.services.GameService;
+import com.dev.gameslist.dto.GameDTO;
+import com.dev.gameslist.dto.GameMinDTO;
+import com.dev.gameslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

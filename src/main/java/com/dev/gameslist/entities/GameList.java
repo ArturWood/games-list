@@ -1,4 +1,4 @@
-package com.dev.dslist.entities;
+package com.dev.gameslist.entities;
 
 import jakarta.persistence.*;
 

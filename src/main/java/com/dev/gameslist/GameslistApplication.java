@@ -1,4 +1,4 @@
-package com.dev.dslist;
+package com.dev.gameslist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
