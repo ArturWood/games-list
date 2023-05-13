@@ -14,3 +14,18 @@ Para realizar as consultas em banco de dados local h2 e retornar JSON
 ![Postman](https://github.com/ArturWood/games-list/assets/111249818/bdd3a2ea-0121-453a-9c12-e164b04d05f5)
 ![H2BD](https://github.com/ArturWood/games-list/assets/111249818/638dca5f-e1d4-460c-8779-1ab42d35594e)
 
+## Como executar o projeto
+
+### Back-end
+Pré-requisitos: Java JDK 17
+
+```bash
+# clonar repositório
+git clone https://github.com/ArturWood/games-list.git
+
+# entrar na pasta do projeto
+cd games-list
+
+# executar o projeto
+./mvnw spring-boot:run
+```
