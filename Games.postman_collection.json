@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "0e11d55b-3a75-4633-a4bd-6a2cf2dc38e6",
+		"name": "Games",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21348557"
+	},
+	"item": [
+		{
+			"name": "Get Games List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Games By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/games/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Games Lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/lists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lists"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
