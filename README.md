@@ -5,13 +5,13 @@
 
 ### Projeto back-end desenvolvido utilizando Java 17 com Spring Framework
 
-API REST que utiliza padrão DTO
+API REST que utiliza padrão DTO em camadas
 
 ![DTO](https://github.com/ArturWood/games-list/assets/111249818/7642602a-0f60-413f-b8ab-640571d81081)
 
-Para realizar as consultas em banco de dados local h2 e retornar JSON
+Para realizar buscas em banco de dados local H2 e retornar um JSON
 
-![Postman](https://github.com/ArturWood/games-list/assets/111249818/bdd3a2ea-0121-453a-9c12-e164b04d05f5)
+![Postman](https://github.com/ArturWood/games-list/assets/111249818/fdff80eb-abe3-45b2-b8bf-0d53f36b3770)
 ![H2BD](https://github.com/ArturWood/games-list/assets/111249818/638dca5f-e1d4-460c-8779-1ab42d35594e)
 
 ## Como executar o projeto
