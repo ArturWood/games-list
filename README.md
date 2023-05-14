@@ -1,5 +1,5 @@
-<img src="https://github.com/ArturWood/games-list/assets/111249818/b109a63c-d130-427e-91d3-fb21cea81ebb" width=400px />
-<img src="https://github.com/ArturWood/games-list/assets/111249818/549ce4b5-47c7-411b-9ff1-f595cb513c9c" width=400px />
+<img src="https://github.com/ArturWood/games-list/assets/111249818/434c56b3-9dc9-412a-91f7-2edc3f389c14" width=300px alt="Java Logo" />
+<img src="https://github.com/ArturWood/games-list/assets/111249818/d8539fd2-938e-4126-b3d4-7236a1ffdbef" width=500px alt="SpringFramework Logo" />
 
 # games-list
 
