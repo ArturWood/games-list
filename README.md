@@ -45,7 +45,7 @@ A aplicação expõe os seguintes endpoints:
 - `GET /games/{id}`: Retorna um jogo específico com base no ID.
 - `GET /lists`: Retorna todas as lista criadas.
 - `GET /lists/{id}/games`: Retorna todos os jogos que pertencem a uma lista.
-- `POST /lists/{id}/update`: Atualiza a posição de um jogo dentro da lista.
+- `PUT /lists/{id}/update`: Atualiza a posição de um jogo dentro da lista.
 
 ## Estrutura do Projeto
 
@@ -61,6 +61,7 @@ O projeto possui a seguinte estrutura de arquivos:
 │   │   │               ├───controllers
 │   │   │               ├───dto
 │   │   │               ├───entities
+│   │   │               ├───infra
 │   │   │               ├───projections
 │   │   │               ├───repositories
 │   │   │               └───services
@@ -68,21 +69,30 @@ O projeto possui a seguinte estrutura de arquivos:
 │   │       ├───static
 │   │       └───templates
 └── .gitignore
-└── Games.postman_collection.json
+└── api-games-list.postman_collection.json
+└── pom.xml
 ```
 
-- O pacote `src.main.resources` contém o arquivo `application.properties` que configura o ambiente da aplicação, e a configuração do banco de dados no `application-test.properties`.
-- O pacote `com.dev.gameslist.controllers` contém as classes que definem os endpoints da API.
-- O pacote `com.dev.gameslist.model` contém as classes que representam um objeto jogo ou lista.
-- O pacote `com.exemplo.repository` contém as interfaces que definem operações de acesso a dados para as entidades.
-- A classe `GameslistApplication.java` é a classe principal que inicia a aplicação.
-- Na source do projeto temos o arquivo `.gitignore` que especifica os arquivos e pastas que devem ser ignorados pelo controle de versão do Git e `Games.postman_collection.json` para consulta e exemplos de retornos na API.
+- O pacote `resources` contém o arquivo `application.properties` que configura o ambiente da aplicação, e a configuração do banco de dados no `application-test.properties`.
+- O pacote `controllers` contém as classes que definem os endpoints da API.
+- O pacote `services` contém a classe `ConsultaCepService` que realiza a chamada à API Via CEP para obter os dados do CEP.
+- O pacote `infra` contém a classe `ExceptionEntityHandler` responsavel por lidar com as exceptions lançadas pelo controller ou service.
+- O pacote `entities` contém as classes que representam um objeto jogo ou lista e seu mapeamento no BD.
+- O pacote `repository` contém as interfaces que definem operações de acesso a dados para as entidades.
+- Na source do projeto temos o arquivo `.gitignore` que especifica os arquivos e pastas que devem ser ignorados pelo controle de versão do Git
+- O arquivo `api-games-list.postman_collection.json` para consultar e testar os endpoints na API.
+- O arquivo `pom.xml` para download das dependencias necessarias para o projeto usando maven.
 
 ## Documentação
 
-No projeto foi utilizado o H2 database para desenvolvimento local e Spring Boot;<br>
-Segue links para uso e documentação:
+No projeto foi utilizado o H2 database para desenvolvimento local;<br>
+Foi adicionado a dependência `springdoc` para facilitar a documentação e visualização dos endpoints (acessar rodando localmente);<br>
+Alem das dependencias para desenvolvimento com Spring Framework - Web, Bean, JPA;<br>
+Links para uso e documentação:
 
 https://github.com/h2database/h2database<br>
 https://spring.io/projects/spring-data-jpa<br>
-https://docs.spring.io/spring-boot/docs/current/reference/html/web.html
+https://docs.spring.io/spring-boot/docs/current/reference/html/web.html<br>
+http://localhost:8080/swagger-ui/index.html
+
+![image](https://github.com/ArturWood/games-list/assets/111249818/6c590571-7eb9-4149-a90e-28e2ec877d97)
