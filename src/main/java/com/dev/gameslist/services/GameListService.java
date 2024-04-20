@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Service // ou @Component
+@Service
 public class GameListService {
 
     @Autowired
@@ -23,8 +23,7 @@ public class GameListService {
     @Transactional(readOnly = true)
     public List<GameListDTO> findAll() {
         List<GameList> resultado = gameListRepository.findAll();
-        List<GameListDTO> resultadoDto = resultado.stream().map(x -> new GameListDTO(x)).toList();
-        return resultadoDto;
+        return resultado.stream().map(GameListDTO::new).toList();
     }
 
     @Transactional
@@ -33,8 +32,8 @@ public class GameListService {
         GameMinProjection obj = list.remove(sourceIndex);
         list.add(destinationIndex, obj);
 
-        int min = sourceIndex < destinationIndex ? sourceIndex : destinationIndex;
-        int max = sourceIndex < destinationIndex ? destinationIndex : sourceIndex;
+        int min = Math.min(sourceIndex, destinationIndex);
+        int max = Math.max(sourceIndex, destinationIndex);
 
         for (int i = min; i <= max; i++) {
             gameListRepository.updateBelongingPosition(listId, list.get(i).getId(), i);

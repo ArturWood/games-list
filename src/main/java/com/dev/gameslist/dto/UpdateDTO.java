@@ -1,7 +1,11 @@
 package com.dev.gameslist.dto;
 
+import jakarta.validation.constraints.NotNull;
+
 public class UpdateDTO {
+    @NotNull(message = "Obrigatorio um numero de origem")
     private Integer sourceIndex;
+    @NotNull(message = "Obrigatorio um numero de destino")
     private Integer destinationIndex;
 
     public Integer getSourceIndex() {
