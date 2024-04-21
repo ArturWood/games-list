@@ -1,7 +1,7 @@
 <img src="https://github.com/ArturWood/games-list/assets/111249818/434c56b3-9dc9-412a-91f7-2edc3f389c14" width=300px alt="Java Logo" />
 <img src="https://github.com/ArturWood/games-list/assets/111249818/d8539fd2-938e-4126-b3d4-7236a1ffdbef" width=500px alt="SpringFramework Logo" />
 
-# Games List - Aplicação Java para Lista de Jogos
+# Games List - Aplicação Java para gerenciar listas de jogos
 
 ### Projeto back-end desenvolvido utilizando Java 17 com Spring Framework
 
@@ -18,7 +18,7 @@ Para realizar buscas em banco de dados local H2 e retornar um JSON
 
 - Java Development Kit (JDK) versão 17
 - IDE Java (como Eclipse ou IntelliJ) ou um editor de texto para escrever o código
-- Fazer download das depencias e plugins utilizando maven
+- Fazer download das dependências e plugins utilizando maven
 - Postman (opcional, para testar os endpoints localmente)
 
 ## Como executar o projeto
@@ -75,7 +75,7 @@ O projeto possui a seguinte estrutura de arquivos:
 
 - O pacote `resources` contém o arquivo `application.properties` que configura o ambiente da aplicação, e a configuração do banco de dados no `application-test.properties`.
 - O pacote `controllers` contém as classes que definem os endpoints da API.
-- O pacote `services` contém a classe `ConsultaCepService` que realiza a chamada à API Via CEP para obter os dados do CEP.
+- O pacote `services` contém as classes responsáveis por acesso ao BD e realizar a lógica de atualização da lista.
 - O pacote `infra` contém a classe `ExceptionEntityHandler` responsavel por lidar com as exceptions lançadas pelo controller ou service.
 - O pacote `entities` contém as classes que representam um objeto jogo ou lista e seu mapeamento no BD.
 - O pacote `repository` contém as interfaces que definem operações de acesso a dados para as entidades.
